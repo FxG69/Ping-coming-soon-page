@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Fredy Gabriel Funes Valle">
+  <meta name="description" content="PING page de frontend mentor">
+  <meta name="keywords" content="HTML,CSS,JS,BOOTSTRAP,FEM">
+  <!-- FAVICON -->
+  <link rel="shortcut icon" href="/assets/favicon-32x32.png" type="image/x-icon">
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <!-- FONTAWESOME -->
+  <script src="https://kit.fontawesome.com/d6d1a0e5e4.js" crossorigin="anonymous"></script>
+  <!-- BS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+  <title>Ping Coming Soon Page</title>
+</head>
+<body>
+  <div class="pop-up d-flex flex-column justify-content-center align-items-center" id="popUp">
+    <p><i class="fa-solid fa-check me-2"></i>Thanks for subscribing!</p>
+    <div class="load-bar" id="loadBar"></div>
+  </div>
+  <i class="theme fa-solid fa-sun position-absolute d-none" id="themeSun"></i>
+  <i class="theme fa-solid fa-moon position-absolute" id="themeMoon"></i>
+  <header class="container-fluid header">
+    <img src="/logo.svg" alt="logo" class="logo d-block mx-auto">
+  </header>
+  <main class="container-fluid">
+    <h1 class="subject text-center fw-light">We are launching <b class="fw-bold text-black">soon!</b></h1>
+    <h3 class="desc text-center fs-5 mt-4 fw-light">Subscribe and get notified</h3>
+    <form class="mb-3 container-fluid mt-5">
+      <div class="row d-flex justify-content-center">
+        <div class="col-xs-6 col-md-3">
+          <input type="email" class="w-100 rounded-5 p-3 input mb-3" id="input" placeholder="name@example.com">
+          <div id="emailError" class="text-danger d-none mt-2 fs-6"></div>
+        </div>
+        <div class="col-xs-6 col-md-2">
+          <button type="submit" class="btn btn-primary rounded-5 p-3" id="btnNotify">Notify Me</button>
+        </div>
+      </div>
+    </form>
+    <img src="/illustration-dashboard.png" alt="dashboard" class="mt-5 img-fluid img-dashboard d-block mx-auto">
+  </main>
+  <footer class="footer container">
+    <ul class="social-media d-flex justify-content-center">
+      <li><a href="#"><i class="fab fa-twitter fs-4 me-5"></i></a></li>
+      <li><a href="#"><i class="fab fa-facebook fs-4 me-5"></i></a></li>
+      <li><a href="#"><i class="fab fa-instagram fs-4 me-5"></i></a></li>
+    </ul>
+    <p class="text-center fw-light opacity-50 mt-4">&copy; 2023 Ping. All rights reserved.</p>
+  </footer>
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
